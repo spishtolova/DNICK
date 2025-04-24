@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Boostrap Exercise 2</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        body{
+            background:linear-gradient(rgba(0, 0, 0, 0.577), rgba(0, 0, 0, 0.577)), url(zad2/cover.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+<section id="navbar">
+    <nav class="navbar navbar-expand-lg mx-4">
+        <img src="zad2/logo.png" class="my-3 mx-5"> 
+        <div class="collapse navbar-collapse d-flex justify-content-center">
+          <div class="navbar-nav ali">
+            <a class="nav-item nav-link text-light mx-3" href="#">Home </a>
+            <a class="nav-item nav-link text-light mx-3" href="#">Tour</a>
+            <a class="nav-item nav-link text-light mx-3" href="#">About</a>
+            <a class="nav-item nav-link text-light mx-3" href="#">Service</a>
+            <a class="nav-item nav-link text-light mx-3 dropdown-toggle" href="#">Pages</a>
+            <a class="nav-item nav-link text-light mx-3" href="#">Blog</a>
+            <a class="nav-item nav-link text-light mx-3" href="#">Contact</a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end mx-5">
+            <button class="btn b-0 text-light fw-bold" style="width: 120px; background-color: #69bb49;">
+                Book Now
+            </button>
+        </div>
+      </nav>
+</section>
+
+<section id="maintext">
+    <div class="d-flex justify-content-center align-items-center flex-column text-light" style="margin-top: 150px;">
+        <h5 class="fst-italic"> Discover The World</h5>
+        <h1 class="fw-bold" style="font-size: 60px;"> Travel and Adventure</h1>
+        <h1 class="fw-bold" style="font-size: 60px;"> Campaign</h1>
+    </div>
+    <div class="d-flex align-items-center justify-content-center gap-3 my-5">
+        <button class="btn b-0 text-light" style="background-color: #f1911b; width: 125px; height: 45px;">
+           Tour Guide
+        </button>
+        <button class="btn b-0 btn-light text-dark" style="width: 125px; height: 45px;">
+           About Us
+        </button>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+    <button class="btn ms-3 position-absolute top-50 end-0 mx-5" style="width: 50px; height: 50px; transform: rotate(90deg); color: #f1911b;">
+        <i class="fa-solid fa-arrow-up-right-from-square fa-3x"></i>
+    </button>
+
+    <button class="btn me-3 position-absolute top-50 start-0 mx-5" style="width: 50px; height: 50px; transform: rotate(270deg); color: #f1911b;">
+        <i class="fa-solid fa-arrow-up-right-from-square fa-3x"></i>
+    </button>
+    </div>
+</section>
+
+<section id="cards" class="bg-light" style="margin-top: 200px;">
+    <div class="d-flex justify-content-center align-items-center">
+        <h6 class="my-5 text-end" style="width: 90px; background-color: #f9b303;"> Popular</h6>
+        <h6 class="my-5 ms-2"> Destination</h6>
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+        <h1 class="fw-bold"> Travel Most Popular Place</h1>
+        <h1 class="fw-bold mb-5"> In The World</h1>
+    </div>
+
+    <div class="row gx-0">
+        <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="card border-0" style="width: 24rem;">
+                <div class="card-img-top img-gradient" style="background-image: linear-gradient(to bottom, rgba(2, 45, 2, 0.303), rgba(0, 255, 0, 0.208)), url('zad2/sl1.jpg'); background-size: cover; background-position: center; height: 235px;">
+                    <div class="price-tag p-2 d-flex align-items-end justify-content-end">
+                        <p class="fw-bold m-0 text-warning" style="font-size: 30px;"> $</p>
+                        <p class="fw-bold text-light m-0" style="font-size: 30px;"> 250</p>
+                      </div>
+                </div>
+                <div class="card-body">
+                  <button class="btn b-0 text-success my-3" style="background-color: #e2ffd6; width: 60px; height: 30px; font-size: 12px;">
+                   Egypt
+                  </button>
+                  <h5 class="card-title fw-bold mb-3">Traveller standing on stone</h5>
+                  <div class="d-flex align-items-center">
+                    <i class="fa-regular fa-clock me-2" style="color: #f1911b;"></i>  
+                    <p class="m-0 text-secondary"> 3 days 4 night</p>
+                    <i class="fa-regular fa-user ms-4" style="color: #f1911b;"></i>
+                    <p class="ms-2 me-0 mt-0 mb-0 text-secondary">26</p>
+                    <i class="fa-regular fa-star ms-4" style="color: #f1911b;"></i>
+                    <p class="ms-2 me-0 mt-0 mb-0 text-secondary">4.8</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="card border-0" style="width: 24rem;">
+                <div class="card-img-top img-gradient" style="background-image: linear-gradient(to bottom,  rgba(2, 45, 2, 0.303), rgba(0, 255, 0, 0.208)), url('zad2/sl2.jpg'); background-size: cover; background-position: center; height: 235px;">
+                    <div class="price-tag p-2 d-flex align-items-end justify-content-end">
+                        <p class="fw-bold m-0 text-warning" style="font-size: 30px;"> $</p>
+                        <p class="fw-bold text-light m-0" style="font-size: 30px;"> 480</p>
+                      </div>
+                </div>
+                <div class="card-body">
+                    <button class="btn b-0 text-success my-3" style="background-color: #e2ffd6; width: 60px; height: 30px; font-size: 12px;">
+                        India
+                       </button>
+                       <h5 class="card-title fw-bold"> Taj Mahal, Agra, Uttar Pradesh, India</h5>
+                       <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock me-2" style="color: #f1911b;"></i>  
+                        <p class="m-0 text-secondary"> 3 days 4 night</p>
+                        <i class="fa-regular fa-user ms-4" style="color: #f1911b;"></i>
+                        <p class="ms-2 me-0 mt-0 mb-0 text-secondary">26</p>
+                        <i class="fa-regular fa-star ms-4" style="color: #f1911b;"></i>
+                        <p class="ms-2 me-0 mt-0 mb-0 text-secondary">4.8</p>
+                      </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="card border-0" style="width: 24rem;">
+                <div class="card-img-top img-gradient" style="background-image: linear-gradient(to bottom,  rgba(2, 45, 2, 0.303), rgba(0, 255, 0, 0.208)), url('zad2/sl3.jpg'); background-size: cover; background-position: center; height: 235px;">
+                    <div class="price-tag p-2 d-flex align-items-end justify-content-end">
+                        <p class="fw-bold m-0 text-warning" style="font-size: 30px;"> $</p>
+                        <p class="fw-bold text-light m-0" style="font-size: 30px;"> 300</p>
+                      </div>
+                </div>
+                <div class="card-body">
+                    <button class="btn b-0 text-success my-3" style="background-color: #e2ffd6; width: 90px; height: 30px; font-size: 12px;">
+                        Switzerland
+                       </button>
+                       <h5 class="card-title fw-bold"> Man in front of Calm body of Water</h5>
+                       <div class="d-flex align-items-center">
+                        <i class="fa-regular fa-clock me-2" style="color: #f1911b;"></i>  
+                        <p class="m-0 text-secondary"> 3 days 4 night</p>
+                        <i class="fa-regular fa-user ms-4" style="color: #f1911b;"></i>
+                        <p class="ms-2 me-0 mt-0 mb-0 text-secondary">26</p>
+                        <i class="fa-regular fa-star ms-4" style="color: #f1911b;"></i>
+                        <p class="ms-2 me-0 mt-0 mb-0 text-secondary">4.8</p>
+                      </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="buttons d-flex align-items-center mt-5 justify-content-center gap-3">
+            <button class="btn border-0 rounded-circle" style="background-color: #f1911b;">
+                <p class="m-0 text-light"> 🠔 </p>
+            </button>
+    
+            <button class="btn border-0 rounded-circle" style="background-color: #f1911b;">
+               <p class="m-0 text-light"> 🠖 </p>
+            </button>
+    
+        </div>
+    </div>
+
+</section>
+
+
+<section id="news" class="bg-light" style="padding-bottom: 100px;">
+    <div class="d-flex justify-content-center align-items-center">
+        <p class="text-end fw-medium" style=" margin-top: 130px; background-color: #f1911b; width: 100px;"> Latest N</p>
+        <p class="text-start fw-medium" style=" margin-top: 130px;"> ews</p>
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+        <h1 class="fw-bolder">  Updated News and Blog </h1>
+        <h1 class="fw-bolder"> From Travellers </h1>
+    </div>
+    <div class="row mt-5">
+        <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="card border-0" style="width: 24rem;">
+                <div class="d-flex justify-content-center">
+                    <img src="zad2/sl4.jpg" alt="Card image" class="mt-4" 
+                         style="width: 85%; border-radius: 5px;">
+                         <div class="buttonpos d-flex align-items-end justify-content-end">
+                            <button class="btn position-absolute" style="max-width: 100px; max-height: 100px; background-color: #69bb49;">
+                                <p class="m-0 fw-medium text-light"> Travel</p>
+                          </button>
+                        </div>
+                  </div>
+                <div class="card-body">
+                    <div class="card-icons d-flex justify-content-center align-items-center mb-3">
+                        <i class="fa-regular fa-user" style="color: #f1911b;"></i>
+                        <p class="m-0 ms-2 text-secondary">Massum Billah</p>
+                        <i class="fa-regular fa-clock ms-3" style="color: #f1911b;"></i> 
+                        <p class="m-0 ms-2 text-secondary">19 Nov, 2023</p>
+                        <i class="fa-regular fa-eye ms-3" style="color: #f1911b;"></i>
+                        <p class="m-0 ms-2 text-secondary"> 5 Mins </p>
+                    </div>
+                  <h5 class="card-title fw-medium">Man Sitting the Grass Covered Mountains</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam deserunt.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="card border-0" style="width: 24rem;">
+                <div class="d-flex justify-content-center">
+                    <img src="zad2/sl5.jpg" alt="Card image" class="mt-4" 
+                         style="width: 85%; border-radius: 5px;">
+                         <div class="buttonpos d-flex align-items-end justify-content-end">
+                            <button class="btn position-absolute" style="max-width: 100px; max-height: 100px; background-color: #69bb49;">
+                                <p class=" m-0 fw-medium text-light"> Travel</p>
+                          </button>
+                        </div>
+                  </div>
+                <div class="card-body">
+                    <div class="card-icons d-flex justify-content-center align-items-center mb-3">
+                        <i class="fa-regular fa-user" style="color: #f1911b;"></i>
+                        <p class="m-0 ms-2 text-secondary">Massum Billah</p>
+                        <i class="fa-regular fa-clock ms-3" style="color: #f1911b;"></i> 
+                        <p class="m-0 ms-2 text-secondary">19 Nov, 2023</p>
+                        <i class="fa-regular fa-eye ms-3" style="color: #f1911b;"></i>
+                        <p class="m-0 ms-2 text-secondary"> 5 Mins </p>
+                    </div>
+                  <h5 class="card-title fw-medium">Man and Woman Beside Gray 5-door Hatchback</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam deserunt.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="card border-0" style="width: 24rem;">
+                <div class="d-flex justify-content-center">
+                    <img src="zad2/sl6.jpg" alt="Card image" class="mt-4" 
+                         style="width: 85%; border-radius: 5px;">
+                         <div class="buttonpos d-flex align-items-end justify-content-end">
+                            <button class="btn position-absolute" style="max-width: 100px; max-height: 100px; background-color: #69bb49;">
+                              <p class=" m-0 fw-medium text-light"> Travel</p>
+                          </button>
+                        </div>
+              </div>
+                <div class="card-body">
+                    <div class="card-icons d-flex justify-content-center align-items-center mb-3">
+                        <i class="fa-regular fa-user" style="color: #f1911b;"></i>
+                        <p class="m-0 ms-2 text-secondary">Massum Billah</p>
+                        <i class="fa-regular fa-clock ms-3" style="color: #f1911b;"></i> 
+                        <p class="m-0 ms-2 text-secondary">19 Nov, 2023</p>
+                        <i class="fa-regular fa-eye ms-3" style="color: #f1911b;"></i>
+                        <p class="m-0 ms-2 text-secondary"> 5 Mins </p>
+                    </div>
+                  <h5 class="card-title fw-medium">Brown Wooden House Near Tree on Blue Sky</h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam deserunt.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <footer style="background: linear-gradient(rgba(8, 1, 36, 0.863), rgba(8, 1, 36, 0.863)), url(zad2/footer.PNG); background-repeat: no-repeat; background-size: cover; padding-left: 100px; padding-top: 100px;">
+      <div class="row">
+        <div class="col-4">
+            <div class="adjust d-flex justify-content-start align-items-start flex-column">
+                <img src="zad2/logo.png" class="mt-5">
+                <p class="text-light mt-2">Lorem ipsum dolor sit, amet consectetur</p>
+                <p class="text-light" style="margin-top: -10px;">adipisicing elit. Fuga veniam similique deserunt.</p>
+                
+            </div>
+            <div class="icons d-flex justify-content-start align-items-center">
+                <i class="fa-regular fa-envelope me-3" style="color: #f1911b;"></i>
+                <p class="text-light m-0">example@example.com</p>
+            </div>
+            <div class="icons d-flex justify-content-start align-items-center mt-2">
+                <i class="fa-solid fa-phone me-3" style="color: #f1911b;"></i>
+                <p class="m-0 text-light"> +956 542 6584</p>
+            </div>
+            <div class="icons d-flex justify-content-start align-items-center mt-2">
+                <i class="fa-regular fa-map me-3" style="color: #f1911b;"></i>
+                <p class="m-0 text-light"> 203 Fake St, California, USA</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="links d-flex align-items-start justify-content-start flex-column mt-5 ms-5">
+                <h4 class="text-light"> Quick Links</h4>
+                <a href="#" class="text-light text-decoration-none mt-2"> Our Story</a>
+                <a href="#" class="text-light text-decoration-none mt-2"> Travel Blog & Tips</a>
+                <a href="#" class="text-light text-decoration-none mt-2"> About Us</a>
+                <a href="#" class="text-light text-decoration-none mt-2"> Tour Guid</a>
+                <a href="#" class="text-light text-decoration-none mt-2"> Be Our Partner</a>
+
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="links d-flex align-items-start justify-content-start flex-column mt-5 ms-5">
+                <h4 class="text-light"> Support</h4>
+                <a href="#" class="text-light text-decoration-none mt-2"> Customer Support</a>
+                <a href="#" class="text-light text-decoration-none mt-2"> Privacy & Policy</a>
+                <a href="#" class="text-light text-decoration-none mt-2"> Terms & Condition</a>
+                <a href="#" class="text-light text-decoration-none mt-2"> Forum</a>
+                <a href="#" class="text-light text-decoration-none mt-2"> Tour Guid</a>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="links d-flex align-items-start justify-content-start flex-column mt-5 ms-5">
+                <h4 class="text-light mb-4"> Newsletter</h4>
+                <div class="form-group d-flex gap-2">
+                    <input type="email" class="form-control rounded-pill" id="exampleFormControlInput1" placeholder="Enter Your Email">
+                    <button class="btn border-0 rounded-circle" style="background-color: #f1911b;">
+                        <i class="fa-solid fa-paper-plane" style="color: white;"></i>
+                    </button>
+                  </div>
+                  <p class="text-light m-0 mt-3"> By subscribing to our mailing list</p>
+                  <p class="text-light m-0"> You will always be updated</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+</section>
+
+
+
+<script src="js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/ca21618686.js" crossorigin="anonymous"></script>
+</body>
+</html>
