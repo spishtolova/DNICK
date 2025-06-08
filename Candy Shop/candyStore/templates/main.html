@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    
+
+<section id="intro" class="p-5" style="background-color: #ffafcc">
+<div class="row">
+<div class="col-6 mt-5">
+    <h3 class="display-4 mx-3 text-dark mt-5"> Explore the sweetest tastes on Earth!</h3>
+    <p class="mt-3 mx-3 text-dark mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <div class="buttons d-flex ms-3">
+        <button class="btn mx-3 border-0" style="border-radius: 5px">
+            Get Started </button>
+           <button class="btn btn-outline-light" style="border-radius: 5px">
+            Learn More
+        </button>
+    </div>
+</div>
+    
+    <div class="col-6 d-flex align-items-center justify-content-center mt-5">
+    <img src = "{% static 'candies-171342_640.jpg' %}" alt="candies" style="width: 500px; box-shadow: 2px 3px 5px brown"/>
+
+</div>
+</div>
+</section>
+    
+    <section id="randominfo" class="py-5"  style="background-color: #e2e2e2">
+    <div class="d-flex align-items-center justify-content-center flex-column">
+        <p class="p-3 m-3 w-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <img src="{% static 'avatar.png'  %} ">
+        <p style="font-weight: bold;"> John Doe / CEO, Candy&Dandy </p>
+    </div>
+    </section>
+    
+    <section id="products" class="py-5 bg-light">
+  <div class="d-flex align-items-center justify-content-center flex-column">
+    <h3 class="p-3 m-3">Products</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+  <div class="row px-5 mt-5">
+    {% for candy in candies %}
+      <div class="col-4 px-5 mb-5">
+        <div class="card border-0" style="box-shadow: 2px 3px 5px pink">
+            <img src="{{ candy.image.url }}" class="card-img-top" alt="{{ candy.name }}" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{ candy.name }}</h5>
+            <p class="card-text">${{ candy.price }}</p>
+            <p style="font-weight: bold">{{ candy.supplier }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+{% endblock %}
